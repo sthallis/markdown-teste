@@ -1,6 +1,6 @@
 # Mapa da Integração — [NOME DA INTEGRAÇÃO]
 
-> Este documento descreve uma integração específica, identificando sua finalidade, os sistemas participantes, a API ou interface utilizada e o fluxo entre origem e destino.
+> Este documento descreve uma integração específica, identificando sua finalidade, origem, destino, API ou interface utilizada e o respectivo fluxo de integração.
 > O detalhamento de endpoints, operações e campos pertence à documentação específica da API.
 
 ## 1. Contexto e finalidade
@@ -19,6 +19,10 @@
 - [PREENCHER, se houver]
 
 ## 3. Fluxo da integração
+
+**Origem:** [PREENCHER]  
+**API / Interface:** [PREENCHER]  
+**Destino:** [PREENCHER]
 
 ```mermaid
 flowchart LR
@@ -52,9 +56,9 @@ flowchart LR
 3. [PREENCHER: como ocorre a interação com o destino.]
 4. [PREENCHER: como o resultado retorna à origem.]
 
-### Exceções relevantes
+### Fluxos alternativos ou exceções relevantes
 
-- [PREENCHER somente quando necessário.]
+- [PREENCHER somente quando a situação alterar de forma relevante o fluxo representado no mapa.]
 
 ## 4. Dependências, restrições e pontos de atenção
 
