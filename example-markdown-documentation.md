@@ -15,19 +15,9 @@
 
 ### Não contempla
 
-- [PREENCHER]
+- [PREENCHER, se houver]
 
-## 3. Participantes da integração
-
-| Papel | Sistema ou componente | Responsabilidade no fluxo |
-|---|---|---|
-| Origem | [PREENCHER] | [PREENCHER] |
-| API / Interface | [PREENCHER] | [PREENCHER] |
-| Destino | [PREENCHER] | [PREENCHER] |
-
-> Adicione linhas somente quando houver outros componentes efetivamente participantes do fluxo.
-
-## 4. Fluxo da integração
+## 3. Fluxo da integração
 
 ```mermaid
 flowchart LR
@@ -65,16 +55,16 @@ flowchart LR
 
 - [PREENCHER somente quando necessário.]
 
-## 5. Dependências, restrições e pontos de atenção
+## 4. Dependências, restrições e pontos de atenção
 
 - **Dependências:** [PREENCHER, se houver]
 - **Restrições:** [PREENCHER, se houver]
 - **Pontos de atenção:** [PREENCHER, se houver]
 
-## 6. Referências técnicas
+## 5. Referências técnicas
 
 | Referência | Localização |
 |---|---|
 | Documentação da API / interface | [PREENCHER] |
 | Demanda ou backlog relacionado | [PREENCHER] |
-| Outra referência necessária | [PREENCHER] |
+| Outra referência necessária | [PREENCHER, se houver] |
