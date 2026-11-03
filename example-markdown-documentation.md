@@ -71,5 +71,5 @@ flowchart LR
 | Referência | Localização |
 |---|---|
 | Documentação da API / interface | [PREENCHER] |
-| Demanda ou backlog relacionado | [PREENCHER] |
+| ID da demanda Redmine | [PREENCHER] |
 | Outra referência necessária | [PREENCHER, se houver] |
