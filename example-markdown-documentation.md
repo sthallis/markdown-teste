@@ -31,14 +31,27 @@
 
 ```mermaid
 flowchart LR
-    A["Sistema de origem"]
-    B["API ou interface"]
-    C["Sistema de destino"]
+    subgraph Consumidor
+        A["Sistema consumidor"]
+    end
+
+    subgraph Camada_de_Integracao
+        B["API ou interface"]
+    end
+
+    subgraph Sistema_Integrado
+        C["Sistema provedor"]
+    end
+
+    subgraph Auditoria
+        D["Registro técnico"]
+    end
 
     A -->|"Solicitação"| B
-    B -->|"Operação"| C
+    B -->|"Consulta ou comando"| C
     C -->|"Resultado"| B
     B -->|"Resposta"| A
+    B -->|"Registro da transação"| D
 ```
 
 ### Descrição do fluxo
