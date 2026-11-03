@@ -65,21 +65,13 @@ flowchart LR
 
 - [PREENCHER somente quando necessário.]
 
-## 5. Informações principais envolvidas
-
-> Registrar apenas as informações necessárias para compreender o fluxo. O detalhamento dos campos deve ser mantido na documentação da API.
-
-| Informação ou grupo de informações | Sentido | Finalidade no fluxo |
-|---|---|---|
-| [PREENCHER] | [ORIGEM → DESTINO / DESTINO → ORIGEM] | [PREENCHER] |
-
-## 6. Dependências, restrições e pontos de atenção
+## 5. Dependências, restrições e pontos de atenção
 
 - **Dependências:** [PREENCHER, se houver]
 - **Restrições:** [PREENCHER, se houver]
 - **Pontos de atenção:** [PREENCHER, se houver]
 
-## 7. Referências técnicas
+## 6. Referências técnicas
 
 | Referência | Localização |
 |---|---|
