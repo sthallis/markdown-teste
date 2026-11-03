@@ -11,7 +11,8 @@
 
 ### Contempla
 
-- [PREENCHER]
+- [PREENCHER: Ex.: Integração relacionada à...]
+- [PREENCHER: Ex.: Solicitação, processamento e/ou retorno...]
 
 ### Não contempla
 
