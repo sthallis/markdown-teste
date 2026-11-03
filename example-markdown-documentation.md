@@ -1,125 +1,75 @@
 # Mapa da Integração — [NOME DA INTEGRAÇÃO]
 
-> Este documento descreve o mapa técnico de uma integração específica.
-> O controle de versão, a TAG, a localização no Git e as regras de manutenção do artefato são registrados no documento de governança em Word.
+> Este documento descreve uma integração específica, identificando sua finalidade, os sistemas participantes, a API ou interface utilizada e o fluxo entre origem e destino.
+> O detalhamento de endpoints, operações e campos pertence à documentação específica da API.
 
-## 1. Finalidade
+## 1. Contexto e finalidade
 
-[PREENCHER: informar para que a integração existe, qual necessidade atende e qual resultado é esperado.]
+[PREENCHER: explicar brevemente em qual processo ou funcionalidade a integração é utilizada, por que ela existe e qual resultado atende.]
 
-## 2. Contexto
+## 2. Escopo
 
-[PREENCHER: descrever o processo, funcionalidade ou situação em que a integração é utilizada.]
-
-## 3. Escopo
-
-### 3.1 Contempla
+### Contempla
 
 - [PREENCHER]
+
+### Não contempla
+
 - [PREENCHER]
 
-### 3.2 Não contempla
+## 3. Participantes da integração
 
-- [PREENCHER]
-- [PREENCHER]
-
-## 4. Sistemas envolvidos
-
-| Papel no fluxo | Sistema ou componente | Responsabilidade na integração |
+| Papel | Sistema ou componente | Responsabilidade no fluxo |
 |---|---|---|
 | Origem | [PREENCHER] | [PREENCHER] |
-| Interface / API | [PREENCHER] | [PREENCHER] |
+| API / Interface | [PREENCHER] | [PREENCHER] |
 | Destino | [PREENCHER] | [PREENCHER] |
 
-> Inclua linhas adicionais quando houver mais de um sistema, API, barramento, serviço ou componente participante.
+> Adicione linhas somente quando houver outros componentes efetivamente participantes do fluxo.
 
-## 5. Visão geral da integração
-
-| Campo | Descrição |
-|---|---|
-| Sistema de origem | [PREENCHER] |
-| Sistema de destino | [PREENCHER] |
-| API ou interface utilizada | [PREENCHER] |
-| Direção principal | [ORIGEM] → [API / INTERFACE] → [DESTINO] |
-| Finalidade da integração | [PREENCHER] |
-
-## 6. Fluxo da integração
+## 4. Fluxo da integração
 
 ```mermaid
 flowchart LR
-    subgraph Consumidor
-        A["Sistema consumidor"]
-    end
-
-    subgraph Camada_de_Integracao
-        B["API ou interface"]
-    end
-
-    subgraph Sistema_Integrado
-        C["Sistema provedor"]
-    end
-
-    subgraph Auditoria
-        D["Registro técnico"]
-    end
+    A["Sistema de origem"]
+    B["API ou interface"]
+    C["Sistema de destino"]
 
     A -->|"Solicitação"| B
-    B -->|"Consulta ou comando"| C
+    B -->|"Operação"| C
     C -->|"Resultado"| B
     B -->|"Resposta"| A
-    B -->|"Registro da transação"| D
 ```
 
-### 6.1 Descrição do fluxo
+### Descrição do fluxo
 
-1. [PREENCHER: evento ou ação que inicia o fluxo.]
-2. [PREENCHER: solicitação enviada pelo sistema de origem.]
-3. [PREENCHER: processamento realizado pela API ou interface.]
-4. [PREENCHER: interação com o sistema de destino.]
-5. [PREENCHER: resposta ou resultado devolvido ao sistema de origem.]
+1. [PREENCHER: o que inicia a integração.]
+2. [PREENCHER: como a origem aciona a API ou interface.]
+3. [PREENCHER: como ocorre a interação com o destino.]
+4. [PREENCHER: como o resultado retorna à origem.]
 
-### 6.2 Exceções relevantes
+### Exceções relevantes
 
-| Situação | Comportamento esperado |
-|---|---|
-| [PREENCHER] | [PREENCHER] |
+- [PREENCHER somente quando necessário.]
 
-## 7. Informações envolvidas
+## 5. Informações principais envolvidas
 
-> Registrar somente as principais informações necessárias para compreender o mapa. O detalhamento dos campos deve permanecer na documentação específica da API.
+> Registrar apenas as informações necessárias para compreender o fluxo. O detalhamento dos campos deve ser mantido na documentação da API.
 
-| Informação ou grupo de informações | Origem | Destino | Finalidade no fluxo |
-|---|---|---|---|
-| [PREENCHER] | [PREENCHER] | [PREENCHER] | [PREENCHER] |
-
-## 8. Operações relacionadas
-
-> Esta seção identifica as operações utilizadas pela integração sem reproduzir toda a especificação técnica da API.
-
-| Operação | Finalidade | Referência na documentação da API |
+| Informação ou grupo de informações | Sentido | Finalidade no fluxo |
 |---|---|---|
-| [PREENCHER] | [PREENCHER] | [PREENCHER] |
+| [PREENCHER] | [ORIGEM → DESTINO / DESTINO → ORIGEM] | [PREENCHER] |
 
-## 9. Dependências e restrições
+## 6. Dependências, restrições e pontos de atenção
 
-### 9.1 Dependências
+- **Dependências:** [PREENCHER, se houver]
+- **Restrições:** [PREENCHER, se houver]
+- **Pontos de atenção:** [PREENCHER, se houver]
 
-- [PREENCHER]
-
-### 9.2 Restrições conhecidas
-
-- [PREENCHER]
-
-## 10. Pontos de atenção
-
-- [PREENCHER: condição, risco técnico, comportamento ou aspecto relevante para compreensão da integração.]
-
-## 11. Referências técnicas
+## 7. Referências técnicas
 
 | Referência | Localização |
 |---|---|
-| Documentação da API | [PREENCHER] |
-| Demanda ou item de backlog relacionado | [PREENCHER] |
-| Sistema de origem | [PREENCHER] |
-| Sistema de destino | [PREENCHER] |
-| Outra referência técnica | [PREENCHER] |
+| Documentação da API / interface | [PREENCHER] |
+| Demanda ou backlog relacionado | [PREENCHER] |
+| Outra referência necessária | [PREENCHER] |
